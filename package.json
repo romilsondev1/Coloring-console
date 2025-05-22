@@ -1,0 +1,34 @@
+{
+  "name": "coloring-console",
+  "version": "1.0.15",
+  "description": "Uma biblioteca para colorir textos no console usando TypeScript e POO.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "type": "module",       
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "console",
+    "colors",
+    "terminal",
+    "typescript",
+    "node",
+    "library"
+  ],
+  "author": "Romilson de Jesus Cavalcante",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
