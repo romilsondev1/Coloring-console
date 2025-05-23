@@ -22,18 +22,40 @@ ___
 
 import coloring from "coloring-console";
 
-console.log(coloring.modify('blue', 'texto de teste'));
+console.log(coloring.create(
+        {
+            color: 'blue',
+            attributes: 'bold'
+        }, 
+        'Texto que você quer modificar'
+        )
+    );
 
-console.log(coloring.modify('red', 'Texto vermelho'));
 
-console.log(coloring.modify('yellow', 'Texto amarelo'));
+## 🎯 Cores disponíveis 
 
-console.log(coloring.modify('green', 'Texto verde'));
+        'red' | 
+        'blue'| 
+        'green'| 
+        'black'| 
+        'yellow'|
+        'green'|
+        'black'|
+        'magenta'|
+        'cyan'|
+        'white'|
+        'light-gray'|
+        'light-red'|
+        'light-green'|
+        'light-yellow'|
+        'light-blue'|
+        'light-magenta'|
+        'light-cyan'|
+        'light-white'
 
-## 🎯 Cores disponíveis - V.1.0.0
+## 🎯  Atributos disponíveis 
 
-red, green, blue, yellow, black
-
+'bold' | 'underline' | 'blink'
 
 🤝 Contribuições
 Sinta-se à vontade para enviar PRs, sugestões ou abrir issues!
