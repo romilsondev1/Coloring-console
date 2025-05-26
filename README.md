@@ -66,11 +66,11 @@ console.log(coloring.create(
 ## 🧩 Custom Themes (News)
 Create named themes with reusable color, background, and attributes:
 
-⚠️ Os temas criados com addTheme são armazenados em memória no runtime atual do Node.js. Isso significa que funcionarão corretamente em aplicações como Express, Next.js, NestJS, entre outras, desde que estejam dentro do mesmo processo.
+⚠️ Themes created with addTheme are stored in memory in the current Node.js runtime. This means that they will work correctly in applications such as Express, Next.js, NestJS, and others, as long as they are within the same process.
 
-No entanto, ambientes onde cada execução é isolada (como scripts CLI independentes, workers, jobs ou funções serverless) não compartilham o mesmo runtime. Nesses casos, os temas criados não serão persistidos entre execuções.
+However, environments where each execution is isolated (such as standalone CLI scripts, workers, jobs, or serverless functions) do not share the same runtime. In these cases, the themes created will not be persisted between executions.
 
-Para esses cenários, recomenda-se recriar os temas dinamicamente ou implementar uma camada de persistência (como um arquivo de configuração ou banco de dados).
+For these scenarios, it is recommended to recreate the themes dynamically or implement a persistence layer (such as a configuration file or database).
 
 ```typescript
 coloring.addTheme("error", {
