@@ -9,7 +9,7 @@ export class Personalize {
         this.builder.reset();
         this.builder.setColor(modify.color);
         this.builder.setBg(modify.background);
-        this.builder.setAttribute(modify.attributes);
+        this.builder.setAttribute(modify.attrs);
 
         this.builder.setContent(value);
         this.builder.setInline(inline);

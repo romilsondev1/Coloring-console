@@ -7,7 +7,7 @@ export interface Builder {
 
     setBg( name: TModify['background']): void;
 
-    setAttribute(name: TModify['attributes']): void;
+    setAttribute(name: TModify['attrs']): void;
 
     setInline(inline: boolean): void;
 

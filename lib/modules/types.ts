@@ -42,6 +42,6 @@ export type TModify = {
     'bg-light-cyan' |
     'bg-light-white',
 
-    attributes?: ['bold' | 'underline' | 'blink']
+    attrs?: ['bold' | 'underline' | 'blink']
 
 }

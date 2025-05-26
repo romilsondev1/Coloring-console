@@ -24,7 +24,7 @@ export class NewTextBuilder implements Builder{
         return
     }
 
-    setAttribute(names: TModify["attributes"]): void {
+    setAttribute(names: TModify["attrs"]): void {
         if(!names) return;
 
         const attr = new Attributes();

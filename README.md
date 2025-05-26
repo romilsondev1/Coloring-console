@@ -1,64 +1,89 @@
 # 🎨 coloring-console
 
-Uma biblioteca leve em TypeScript com Programação Orientada a Objetos (POO) para personalizar e colorir textos no terminal.
+A lightweight and elegant **TypeScript** library to **customize and colorize terminal output** using clean **Object-Oriented Programming (OOP)**.
 
-Ideal para logs mais visuais, ferramentas de CLI ou apenas para deixar seu terminal mais bonito!
+Perfect for:
+
+✅ Visual logs  
+✅ CLI tools  
+✅ Clean code architecture  
+✅ Eye-catching terminal UIs
 
 ---
 
-## 🚀 Instalação
+## 🚀 Installation
 
 ```bash
 npm install coloring-console
+```
 
-🧠 Como funciona
-A biblioteca usa ANSI escape codes para aplicar cores ao texto do console.
+✨ Why use it?
+✅ Written in TypeScript with OOP principles
 
-Ela foi construída com POO + TypeScript, sendo modular, extensível e ideal como exemplo de arquitetura limpa em bibliotecas.
+🧱 Based on the Builder Pattern for flexibility
 
-___
+🌈 Supports text color, background color, and text attributes
 
-## 🧪 Exemplo de uso
+💡 Great as an educational example of clean, modular architecture
 
-import coloring from "coloring-console";
+
+## 🧪 Usage Example
+
+```typescript
+import { coloring , theme } from "coloring-console";
 
 console.log(coloring.create(
-        {
-            color: 'blue',
-            attributes: 'bold'
-        }, 
-        'Texto que você quer modificar'
-        )
-    );
+  {
+    color: "blue",
+    background: "bg-yellow",
+    attrs: ["bold"]
+  },
+  "Stylish output in your terminal"
+));
 
+```
 
-## 🎯 Cores disponíveis 
+## 🎯 Text Colors
 
-        'red' | 
-        'blue'| 
-        'green'| 
-        'black'| 
-        'yellow'|
-        'green'|
-        'black'|
-        'magenta'|
-        'cyan'|
-        'white'|
-        'light-gray'|
-        'light-red'|
-        'light-green'|
-        'light-yellow'|
-        'light-blue'|
-        'light-magenta'|
-        'light-cyan'|
-        'light-white'
+"default" | "black" | "red" | "green" | "yellow" |
+"blue" | "magenta" | "cyan" | "white" |
+"light-gray" | "light-red" | "light-green" |
+"light-yellow" | "light-blue" | "light-magenta" |
+"light-cyan" | "light-white"
 
-## 🎯  Atributos disponíveis 
+## 🎨 Background Colors
 
-'bold' | 'underline' | 'blink'
+"bg-black" | "bg-red" | "bg-green" | "bg-yellow" |
+"bg-blue" | "bg-magenta" | "bg-cyan" | "bg-white" |
+"bg-light-gray" | "bg-light-red" | "bg-light-green" |
+"bg-light-yellow" | "bg-light-blue" | "bg-light-magenta" |
+"bg-light-cyan" | "bg-light-white"
 
-🤝 Contribuições
-Sinta-se à vontade para enviar PRs, sugestões ou abrir issues!
+## 💡 Text Attributes
 
-📄 Licença
+"bold" | "underline" | "blink"
+
+## 🧩 Custom Themes (News)
+Create named themes with reusable color, background, and attributes:
+
+```typescript
+coloring.addTheme("error", {
+  color: "light-white",
+  background: "bg-red",
+  attrs: "bold"
+});
+
+console.log(theme.applyTheme('error', 'New error theme test', true))
+```
+
+## 🤝 Contributing
+PRs, issues and suggestions are welcome!
+Let’s build the most elegant terminal logs together. 🌟
+
+## 📄 License
 ISC © Romilson de Jesus Cavalcante
+
+⭐️ Found it useful? Don’t forget to star this repo on GitHub and share it with your dev friends!
+
+## access repository
+--> https://github.com/romilsondev1/Coloring-console
