@@ -4,7 +4,7 @@ import { ThemeManager } from './modules/factory/ThemeManager.js';
 
 const builder = new NewTextBuilder();
 const coloring = new Personalize(builder);
-const theme = new ThemeManager();
+const theme = ThemeManager.getInstance();
 
 export {
     coloring,
