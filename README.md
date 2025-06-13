@@ -38,7 +38,8 @@ console.log(coloring.create(
     background: "bg-yellow",
     attrs: ["bold"]
   },
-  "Stylish output in your terminal"
+  "Stylish output in your terminal",
+  true
 ));
 
 ```
